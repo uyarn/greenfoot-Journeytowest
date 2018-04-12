@@ -1,6 +1,8 @@
 #BlueJ class context
 comment0.target=cloud
 comment0.text=\n\ Write\ a\ description\ of\ class\ cloud\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
-comment1.params=
-comment1.target=void\ act()
-numComments=2
+comment1.params=r\ l\ s
+comment1.target=cloud(int,\ int,\ int)
+comment2.params=
+comment2.target=void\ act()
+numComments=3

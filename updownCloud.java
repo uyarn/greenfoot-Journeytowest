@@ -1,36 +1,36 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class cloud here.
+ * Write a description of class updownCloud here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class cloud extends Floor
+public class updownCloud extends Floor
 {
     /**
-     * Act - do whatever the cloud wants to do. This method is called whenever
+     * Act - do whatever the updownCloud wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     private int speed;
-    private int right;
-    private int left;
-    public cloud(int r, int l, int s){
+    private int up;
+    private int down;
+    public updownCloud(int u, int d, int s){
        speed = s;
-       right = r;
-       left = l;
+       up = u;
+       down = d;
     
     }
     
     public void act() 
     {
         // Add your action code here.
-        if ( (speed > 0 && getX() >= right) ||
-        (speed < 0 && getX() <=left) )
+        if ( (speed > 0 && getY() >= down) ||
+        (speed < 0 && getY() <= up) )
             {
                 speed = -speed;
       }
-        move(speed);
+        setLocation(getX(),getY()+speed);
        
-    }    
+    }  
 }
