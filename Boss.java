@@ -60,7 +60,7 @@ public class Boss extends Enemy
     {   
         rate++;
         World w = getWorld();
-        Bullet bullet = new Bullet(speed);
+        EnemyBullet bullet = new EnemyBullet(speed);
         if(rate%25 == 0)
         {
             w.addObject(bullet,getX(),getY());
