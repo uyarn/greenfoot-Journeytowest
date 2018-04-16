@@ -1,3 +1,4 @@
+
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
@@ -12,18 +13,60 @@ public class Bullet extends Actor
      * Act - do whatever the Bullet wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    int speed = 0;
-    public Bullet(int speed){
-        this.speed = speed;
+    
+    private Boolean direction;
+    private int  speed;
+    public boolean live;
+    
+    public Bullet(Boolean dir,boolean live)
+    {
+        direction = dir;
+        speed = 15;
+        this.live=live;
     }
+    
     public void act() 
     {
         // Add your action code here.
-        World w = getWorld();
-        move(speed*5);
-        if(isAtEdge())
-        {
-            w.removeObject(this);
+        if(direction){
+          move(speed);
         }
-    }    
+        if(!direction){
+          move(-speed);
+        }
+        if(isAtEdge()){
+          getWorld().removeObject(this);
+        }
+                
+    }   
+    
+    //角色打击敌人
+    public boolean hit(Enemy enemy){
+        
+            if(this.intersects(enemy)){
+                getWorld().removeObject(this);
+                this.live=false;
+                return true;
+            }
+            else{
+                return false;
+            }                    
+    }
+    
+    //敌人打击角色
+//    public void hitRole(Monkeyrole monkey){
+
+//            if(this.intersects(monkey)){
+//                monkey.health-=10;
+//                System.out.println( monkey.health);
+//            }
+//            if(monkey.health<=0){
+//                this.live=false;
+ //               getWorld().removeObject(monkey);
+//            }
+                    
+//    }
+    
+    
 }
+
