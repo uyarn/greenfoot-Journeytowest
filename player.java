@@ -37,12 +37,13 @@ public class player extends Actor
            setLocation(getX(),getY()+4);
          }
         }
-            
+     
           
       
 // 发射子弹
        
     }
+    
 }
         
 

@@ -141,7 +141,7 @@ public class Monkeyrole extends player
             
             Scenario1 world = (Scenario1) getWorld();
             world.playerDie();
-            getWorld().removeObject(this);
+            
         }
         
         
