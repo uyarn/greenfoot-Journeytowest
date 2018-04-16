@@ -281,5 +281,12 @@ public class Scenario1 extends World
         fire.setLocation(175,171);
         updownCloud updowncloud2 = new updownCloud(300, 450, 3);
         addObject(updowncloud2,971,456);
+
+        Factory factory = new Factory();
+        Enemy enemy1 = factory.createEnemy(0,889,949);
+        addObject(enemy1,919,455);
+       
+        Enemy boss = factory.createEnemy(1,827,887);
+        addObject(boss,857,239);
     }
 }
