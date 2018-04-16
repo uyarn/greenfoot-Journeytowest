@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Boss
+comment0.text=\n\ Write\ a\ description\ of\ class\ Boss\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=left\ right
+comment1.target=Boss(int,\ int)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Boss\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\n\ \n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \n
+comment3.params=
+comment3.target=Enemy\ clone()
+comment4.params=
+comment4.target=void\ shooter()
+numComments=5
