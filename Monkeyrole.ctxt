@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Monkeyrole
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Monkeyrole\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ Monkeyrole\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=dicision\ sce\ health
 comment1.target=Monkeyrole(java.lang.Boolean,\ Scenario1,\ int)
 comment2.params=

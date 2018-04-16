@@ -21,10 +21,16 @@ public abstract class Enemy extends Actor
     int speed =1 ;
     int left ;
     int right;
-    public Enemy(Boolean live,Scenario1 sce)
+    
+    public Enemy(){
+    }
+    
+    public Enemy(int left,int right,Boolean live,Scenario1 sce)
     {
         this.live = live;
         this.sce=sce;
+        this.left = left;
+        this.right = right;
     }
     
     public void act() 
@@ -35,6 +41,7 @@ public abstract class Enemy extends Actor
             fire();  
             lastShot = System.currentTimeMillis();
         }  
+        
     }    
     
     private void fire(){

@@ -37,6 +37,7 @@ public class Bullet extends Actor
         if(isAtEdge()){
           getWorld().removeObject(this);
         }
+        
                 
     }   
     

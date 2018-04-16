@@ -19,14 +19,15 @@ public class Scenario1 extends World
     
     
      List<Bullet> bullets=new ArrayList<Bullet>();
-    
+     int a =0;
      List<BulletEnemy> enemybullets=new ArrayList<BulletEnemy>();
-     Enemy enemy=new Enemy(true,this);
+     Enemy enemy=new SmallEnemy(100,200);
      
      Monkeyrole monkey = new Monkeyrole(false,this,30);
+     Monkeyrole monkey2 = new Monkeyrole(true,this,30);
 //    Enemy enemy2=new Enemy();
     
-    
+   
     public Scenario1()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -295,24 +296,22 @@ public class Scenario1 extends World
         fire.setLocation(175,171);
         updownCloud updowncloud2 = new updownCloud(300, 450, 3);
         addObject(updowncloud2,971,456);
-//        player player = new player();
-//        addObject(player,303,290);
-//        player.setLocation(284,283);
-//        player.setLocation(276,284);
+        //        player player = new player();
+        //        addObject(player,303,290);
+        //        player.setLocation(284,283);
+        //        player.setLocation(276,284);
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 以上是场景
-        
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 以上是场景
+
         addObject(enemy,300,200);
         enemy.setLocation(384,400);
-//        addObject(enemy2,300,200);
-//        enemy2.setLocation(684,33);
-        
-        
+        //        addObject(enemy2,300,200);
+        //        enemy2.setLocation(684,33);
+
         addObject(monkey,80,410);
-        
-        
+        addObject(monkey2,80,410);
+
        
-        
     }
     
     public void act() {
