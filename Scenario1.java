@@ -1,5 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Write a description of class Scenario1 here.
  * 
@@ -14,14 +17,25 @@ public class Scenario1 extends World
      * 
      */
     
+    
+     List<Bullet> bullets=new ArrayList<Bullet>();
+    
+     List<BulletEnemy> enemybullets=new ArrayList<BulletEnemy>();
+     Enemy enemy=new Enemy(true,this);
+     
+     Monkeyrole monkey = new Monkeyrole(false,this,30);
+//    Enemy enemy2=new Enemy();
+    
+    
     public Scenario1()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1024, 489, 1); 
         
         setBackground("dark1.jpg");
-        act();
+        
         prepare();
+        act();
     }
     public void GameOver(){
         showText("Game Over", 512, 244);
@@ -281,12 +295,51 @@ public class Scenario1 extends World
         fire.setLocation(175,171);
         updownCloud updowncloud2 = new updownCloud(300, 450, 3);
         addObject(updowncloud2,971,456);
+//        player player = new player();
+//        addObject(player,303,290);
+//        player.setLocation(284,283);
+//        player.setLocation(276,284);
 
-        Factory factory = new Factory();
-        Enemy enemy1 = factory.createEnemy(0,889,949);
-        addObject(enemy1,919,455);
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 以上是场景
+        
+        addObject(enemy,300,200);
+        enemy.setLocation(384,400);
+//        addObject(enemy2,300,200);
+//        enemy2.setLocation(684,33);
+        
+        
+        addObject(monkey,80,410);
+        
+        
        
-        Enemy boss = factory.createEnemy(1,827,887);
-        addObject(boss,857,239);
+        
+    }
+    
+    public void act() {
+         
+        if(bullets.size()>0){
+          for(int i=0; i<bullets.size();i++){
+            Bullet bul=bullets.get(i);
+            if(enemy.live==true){
+                boolean whetherHit=bul.hit(enemy);
+                if(whetherHit){
+                    removeObject(enemy);
+                    enemy.live=false;
+                }
+            }            
+          }
+        }
+        
+        
+        
+        if(enemybullets.size()>0){
+            for(int i=0; i<enemybullets.size();i++){
+                BulletEnemy bul=enemybullets.get(i);
+//                bul.hitRole(monkey);
+            }
+        }
+        
+        
+        
     }
 }
