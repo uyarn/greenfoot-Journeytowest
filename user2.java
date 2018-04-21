@@ -48,5 +48,14 @@ public class user2 extends PickRoles
            
             
         }
+            if (isTouching(items.class))
+            {
+                items item = (items)getOneIntersectingObject(items.class);
+                Bag.add(item);
+                Bag.print_lists();
+                removeTouching(items.class);
+                getWorld().removeObject(item);    
+            } 
+     
     }    
 }

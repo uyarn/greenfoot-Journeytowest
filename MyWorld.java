@@ -1,5 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.List;
+import java.util.ArrayList;
 /**
  * Write a description of class MyWorld here.
  * 
@@ -48,5 +49,8 @@ public class MyWorld extends World
         addObject(user1,62,263);
         user2 user2 = new user2();
         addObject(user2,70,303);
+        
+
+        
     }
 }
