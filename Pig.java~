@@ -14,7 +14,7 @@ public class Pig extends roleChoice
      */
     public Pig () {
         GreenfootImage image = getImage();  
-        image.scale(80,80); 
+        image.scale(70,70); 
         setImage(image);
     
     }

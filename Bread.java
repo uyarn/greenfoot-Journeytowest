@@ -18,6 +18,15 @@ public class Bread extends items
        image.scale(50,25);
        setImage(image);
     }
+    public void add(items item){
+        // error operation
+    }
+    public void remove(items item){
+        // error operation
+    }  
+    public items getChild(int i){
+      return null;   
+    }
     public void act() 
     {
         // Add your action code here.

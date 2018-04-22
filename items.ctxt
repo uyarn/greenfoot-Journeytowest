@@ -1,7 +1,13 @@
 #BlueJ class context
 comment0.target=items
 comment0.text=\n\ Write\ a\ description\ of\ class\ items\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
-comment1.params=
-comment1.target=void\ act()
+comment1.params=item
+comment1.target=void\ add(items)
 comment1.text=\n\ Act\ -\ do\ whatever\ the\ items\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
-numComments=2
+comment2.params=item
+comment2.target=void\ remove(items)
+comment3.params=i
+comment3.target=items\ getChild(int)
+comment4.params=
+comment4.target=void\ act()
+numComments=5

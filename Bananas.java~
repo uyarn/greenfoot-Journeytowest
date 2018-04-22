@@ -1,23 +1,26 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Pig here.
+ * Write a description of class Bananas here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Pig extends roleChoice
+public class Bananas extends items
 {
     /**
-     * Act - do whatever the Pig wants to do. This method is called whenever
+     * Act - do whatever the Bananas wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public Pig () {
-        GreenfootImage image = getImage();  
-        image.scale(80,80); 
-        setImage(image);
+    public Bananas()
+    {
+      
+       GreenfootImage image = getImage();
+       image.scale(40,40);
+       setImage(image);
     
     }
+    
     public void act() 
     {
         // Add your action code here.

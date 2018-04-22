@@ -60,7 +60,7 @@ public class user2 extends PickRoles
                // Bag.print_lists();
                 //removeTouching(items.class);
                 //getWorld().removeObject(item);    
-            //} 
+            } 
      
     }    
 }

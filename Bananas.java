@@ -20,6 +20,15 @@ public class Bananas extends items
        setImage(image);
     
     }
+    public void add(items item){
+        // error operation
+    }
+    public void remove(items item){
+        // error operation
+    }  
+    public items getChild(int i){
+      return null;   
+    }
     public void act() 
     {
         // Add your action code here.

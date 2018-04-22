@@ -43,7 +43,7 @@ public class MyWorld extends World
         Monkey monkey = new Monkey();
         addObject(monkey,172,290);
         Pig pig = new Pig();
-        addObject(pig,298,290);
+        addObject(pig,298,29);
         Sandy sandy = new Sandy();
         addObject(sandy,422,291);
         user1 user1 = new user1();

@@ -1,27 +1,26 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Orange here.
+ * Write a description of class Monkey here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Orange extends items
+public class Monkey extends roleChoice
 {
     /**
-     * Act - do whatever the Orange wants to do. This method is called whenever
+     * Act - do whatever the Monkey wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public Orange()
-    {
-         
-       GreenfootImage image = getImage();
-       image.scale(35,35);
-       setImage(image);
-    
+   
+    public Monkey(){
+      GreenfootImage image = getImage();  
+        image.scale(100, 100); 
+        setImage(image);
     }
     public void act() 
     {
         // Add your action code here.
+       
     }    
 }

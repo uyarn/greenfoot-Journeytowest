@@ -15,8 +15,7 @@ public abstract class items extends Actor
     // add items methods
     public abstract void add(items item); 
     // remove items methods
-    public abstract void remove(items item); 
-    
+    public abstract void remove(items item);  
     public abstract items getChild(int i);  
     
     public  void act() 
