@@ -7,24 +7,25 @@ import java.util.ArrayList;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class MyWorld extends World
+public class MyWorld extends World implements WorldSwapWorld
 {
 
     /**
      * Constructor for objects of class MyWorld.
      * 
      */
-    public int roleChoice = 0;
+    
+    public static int roleChoice = 0;
+    
     public MyWorld()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        // Create a new world with 600x350 cells with a cell size of 1x1 pixels.
         super(600, 350, 1);
         setBackground("background1.jpg");
         prepare();
     }
-    
-    
-    public void statusChoice(){
+    public void worldSwapWorld(){
+      System.out.println("test");
       this.roleChoice+=1;
       if(this.roleChoice==2){
         List objects = getObjects(null);
@@ -33,6 +34,8 @@ public class MyWorld extends World
          Greenfoot.setWorld(dark);
         }
     }
+    
+
     
     /**
      * Prepare the world for the start of the program.

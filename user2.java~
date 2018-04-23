@@ -6,18 +6,27 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class user2 extends PickRoles
+public class user2 extends PickRoles implements UserSwapWorld
 {
     /**
      * Act - do whatever the user2 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-      public user2(){
+    UserWorldAdapter userCallWorld;
+    public user2(){
         
        GreenfootImage image = getImage();  
         image.scale(30,30); 
         setImage(image);
     }
+    
+     // implement the userSwapWorld
+    public void trySwapWorld(){
+      userCallWorld = new UserWorldAdapter();
+      userCallWorld.worldSwapWorld();
+    }
+    
+    
     public void act() 
     {
         // Add your action code here.
@@ -29,24 +38,27 @@ public class user2 extends PickRoles
         }
         if ( Greenfoot.isKeyDown("E")){
            
-                MyWorld world = (MyWorld) getWorld();
+                
                
             if(isTouching(Monkey.class)){
                 removeTouching(Monkey.class); 
                 getWorld().removeObject(this);
-                world.statusChoice();
+                // use the adapter to call world change world methods
+                trySwapWorld();
             }
             else{
               if(isTouching(Pig.class)){
                 removeTouching(Pig.class);
                  getWorld().removeObject(this);
-                 world.statusChoice();
+                 // use the adapter to call world change world methods
+                 trySwapWorld();
             }
              else{
                 if(isTouching(Sandy.class)){
                 removeTouching(Sandy.class);
                  getWorld().removeObject(this);
-                 world.statusChoice();
+                 // use the adapter to call world change world methods
+                 trySwapWorld();
             }    
                 }
             }
@@ -60,7 +72,7 @@ public class user2 extends PickRoles
                // Bag.print_lists();
                 //removeTouching(items.class);
                 //getWorld().removeObject(item);    
-            } 
+            //} 
      
     }    
 }

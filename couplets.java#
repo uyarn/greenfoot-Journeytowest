@@ -1,21 +1,21 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Bread here.
+ * Write a description of class Apples here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Bread extends items
+public class couplets extends items
 {
     /**
-     * Act - do whatever the Bread wants to do. This method is called whenever
+     * Act - do whatever the Apples wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public Bread()
+    public couplets()
     {
        GreenfootImage image = getImage();
-       image.scale(50,25);
+       image.scale(35,35);
        setImage(image);
     }
     public void add(items item){

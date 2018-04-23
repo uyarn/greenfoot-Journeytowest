@@ -6,18 +6,29 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name)
  * @version (a version number or a date)
  */
-public class user1 extends PickRoles
+public class user1 extends PickRoles implements UserSwapWorld
 {
     /**
      * Act - do whatever the user1 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+   UserWorldAdapter userCallWorld;
    public user1(){
     
        GreenfootImage image = getImage();  
         image.scale(30, 30); 
         setImage(image);
     }
+    
+    // implement the userSwapWorld
+    public void trySwapWorld(){
+        
+      userCallWorld = new UserWorldAdapter();
+      userCallWorld.trySwapWorld();
+    }
+    
+    
+    
    public void act()
     {
         // Add your action code here.
@@ -29,26 +40,26 @@ public class user1 extends PickRoles
         }
         if ( Greenfoot.isKeyDown("enter") ){
 
-            MyWorld world = (MyWorld) getWorld();
+           
             
             if(isTouching(Monkey.class)){
                 removeTouching(Monkey.class);
                
                 getWorld().removeObject(this);
-                 world.statusChoice();
+                trySwapWorld();
             }
             else{
               if(isTouching(Pig.class)){
                   removeTouching(Pig.class);
                   
                   getWorld().removeObject(this);
-                  world.statusChoice();
+                  trySwapWorld();
               }
               else{
                 if(isTouching(Sandy.class)){
                     removeTouching(Sandy.class);
                    getWorld().removeObject(this);
-                   world.statusChoice();
+                   trySwapWorld();
                 }
               }
             }
