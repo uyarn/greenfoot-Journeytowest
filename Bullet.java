@@ -18,10 +18,13 @@ public class Bullet extends Actor
     private int  speed;
     public boolean live;
     
+    public Bullet(){
+        
+    }
+    
     public Bullet(Boolean dir,boolean live)
     {
         direction = dir;
-        speed = 15;
         this.live=live;
     }
     
@@ -29,14 +32,15 @@ public class Bullet extends Actor
     {
         // Add your action code here.
         if(direction){
-          move(speed);
+          move(15);
         }
         if(!direction){
-          move(-speed);
+          move(-15);
         }
         if(isAtEdge()){
           getWorld().removeObject(this);
         }
+        
                 
     }   
     

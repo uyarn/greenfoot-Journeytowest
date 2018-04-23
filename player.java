@@ -6,17 +6,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class player extends Actor
+public class Player extends Actor
 {
     /**
      * Act - do whatever the player wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
-    
-    private boolean enterIsDown;
-    private boolean upIsDown;
-    
+    public  Boolean leftright;
     
     public void act() 
     {
@@ -37,12 +34,13 @@ public class player extends Actor
            setLocation(getX(),getY()+4);
          }
         }
-            
+     
           
       
 // 发射子弹
        
     }
+    
 }
         
 

@@ -8,7 +8,6 @@ import greenfoot.*;
 public class SmallEnemy extends Enemy 
 {
     
-    private int temp = 0;
     int left2 = this.getRandomNumber(0,1020);
     int right2 = this.getRandomNumber(left2+1,1024);
     
@@ -38,7 +37,6 @@ public class SmallEnemy extends Enemy
         {
             speed = -1;
             move(speed);
-            temp = temp+1;
         }
         else if(speed < 0 && getX() > left)
         {
@@ -50,10 +48,10 @@ public class SmallEnemy extends Enemy
         {
             speed = 1;
             move(speed);
-            temp = temp+1;
         }
-        if(temp > 1)
+        if(isTouching(Bullet.class))
         {
+            getWorld().removeObject(getOneIntersectingObject(Bullet.class));
             HP = HP - 10;
             
         }

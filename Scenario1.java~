@@ -41,7 +41,7 @@ public class Scenario1 extends World
     }
     public void playerDie(){
         playerStatus--;
-        
+        showText("Hello world", 100, 100);
         if(playerStatus==0)
            GameOver();
     

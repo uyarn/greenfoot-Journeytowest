@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Sandyrole extends player
+public class Sandyrole extends Player
 {
     /**
      * Act - do whatever the Sandyrole wants to do. This method is called whenever
