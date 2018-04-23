@@ -1,4 +1,5 @@
 #Greenfoot properties
+<<<<<<< HEAD
 #Mon Apr 23 12:48:34 BST 2018
 target24.type=ClassTarget
 target16.name=updownCloud
@@ -29,22 +30,69 @@ target37.width=90
 target31.height=50
 target39.y=0
 target39.x=0
+=======
+#Mon Apr 23 21:10:49 CST 2018
+target24.type=ClassTarget
+target16.name=bricks
+class.Scenario1.image=dark1.jpg
+target11.typeParameters=
+dependency58.from=Bullet
+dependency33.from=Monkeyrole
+target10.width=80
+target36.height=50
+dependency19.type=UsesDependency
+dependency79.to=Player
+target34.showInterface=false
+dependency46.type=UsesDependency
+dependency21.type=UsesDependency
+dependency73.type=UsesDependency
+target21.typeParameters=
+target36.type=InterfaceTarget
+target17.showInterface=false
+target11.type=ClassTarget
+dependency33.to=Bullet
+dependency18.from=Scenario1
+target30.name=Sandy
+dependency45.from=MyWorld
+target17.typeParameters=
+dependency20.from=Scenario1
+class.user1.image=yellow-draught.png
+dependency27.to=Monkeyrole
+target6.name=SmallEnemy
+dependency72.from=StateContext
+target37.width=90
+target31.height=50
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 target31.showInterface=false
 target31.y=0
 target31.x=0
 class.Tang.superclass=greenfoot.Actor
+<<<<<<< HEAD
 dependency60.type=UsesDependency
 target14.showInterface=false
 target32.width=80
 mainWindow.width=1280
+=======
+dependency74.to=Player
+dependency60.type=UsesDependency
+target14.showInterface=false
+dependency68.to=Monkeyrole
+target32.width=100
+mainWindow.width=1938
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 target8.showInterface=false
 class.updownCloud.image=cloud.png
 target1.typeParameters=
 target1.type=ClassTarget
+<<<<<<< HEAD
+=======
+class.HealthNormal.superclass=greenfoot.Actor
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 dependency35.type=UsesDependency
 target28.y=0
 target15.typeParameters=
 target28.x=0
+<<<<<<< HEAD
 dependency22.to=Enemy
 class.GifImage.superclass=
 target25.type=ClassTarget
@@ -57,6 +105,20 @@ dependency59.from=UserWorldAdapter
 target25.typeParameters=
 class.Sandy.superclass=roleChoice
 dependency34.from=MyWorld
+=======
+dependency22.to=Factory
+class.GifImage.superclass=
+target25.type=ClassTarget
+target17.name=Context
+target20.y=0
+target11.showInterface=false
+target20.x=0
+dependency16.to=fire
+dependency59.from=user2
+target25.typeParameters=
+class.Sandy.superclass=roleChoice
+dependency34.from=Monkeyrole
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 dependency5.to=Bullet
 target19.height=50
 target4.y=0
@@ -64,12 +126,20 @@ target23.width=80
 target4.x=0
 target5.showInterface=false
 target18.width=80
+<<<<<<< HEAD
 dependency47.type=UsesDependency
 dependency22.type=UsesDependency
+=======
+dependency63.to=Floor
+dependency47.type=UsesDependency
+dependency22.type=UsesDependency
+dependency74.type=UsesDependency
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 target17.y=0
 target17.x=0
 target37.type=ClassTarget
 target12.type=ClassTarget
+<<<<<<< HEAD
 dependency57.to=Bag
 class.Monkey.superclass=roleChoice
 class.PickRoles.superclass=greenfoot.Actor
@@ -82,6 +152,21 @@ target14.width=80
 target7.name=Factory
 target2.width=80
 dependency11.to=Scenario1
+=======
+dependency57.to=MyWorld
+class.Monkey.superclass=roleChoice
+class.PickRoles.superclass=greenfoot.Actor
+dependency19.from=Scenario1
+target31.name=longBrick
+dependency46.from=MyWorld
+class.Tang.image=Tang.gif
+dependency21.from=Scenario1
+target7.name=tang
+dependency73.from=StateContext
+target14.width=100
+target2.width=80
+dependency11.to=EnemyBullet
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 target14.height=50
 target2.showInterface=false
 target23.typeParameters=
@@ -89,6 +174,7 @@ target37.showInterface=false
 target28.showInterface=false
 readme.height=58
 dependency61.type=UsesDependency
+<<<<<<< HEAD
 package.numTargets=39
 target5.typeParameters=
 target19.typeParameters=
@@ -99,11 +185,24 @@ dependency60.from=UserWorldAdapter
 dependency36.type=UsesDependency
 dependency46.to=Sandy
 class.SingletonBags.superclass=items
+=======
+package.numTargets=38
+target5.typeParameters=
+target19.typeParameters=
+class.StateContext.superclass=greenfoot.Actor
+dependency52.to=Player
+class.tang.image=tang.png
+target2.type=ClassTarget
+dependency60.from=user2
+dependency36.type=UsesDependency
+dependency46.to=Sandy
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 class.tang.superclass=greenfoot.Actor
 target29.typeParameters=
 target25.showInterface=false
 target26.type=ClassTarget
 dependency1.type=UsesDependency
+<<<<<<< HEAD
 target18.name=MyWorld
 target34.y=0
 target34.x=0
@@ -111,6 +210,15 @@ target20.name=Rice
 class.cloud.superclass=Floor
 target3.typeParameters=
 dependency35.from=MyWorld
+=======
+target18.name=user1
+target34.y=0
+target34.x=0
+target20.name=Floor
+class.cloud.superclass=Floor
+target3.typeParameters=
+dependency35.from=Monkeyrole
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 class.Boss.superclass=Enemy
 target35.height=50
 target36.width=80
@@ -118,6 +226,7 @@ target8.height=50
 target31.typeParameters=
 dependency48.type=UsesDependency
 dependency23.type=UsesDependency
+<<<<<<< HEAD
 target22.showInterface=false
 target38.type=AbstractTarget
 dependency50.type=UsesDependency
@@ -200,27 +309,133 @@ dependency38.type=UsesDependency
 dependency54.to=Sandy
 class.SmallEnemy.superclass=Enemy
 editor.fx.0.height=720
+=======
+dependency75.type=UsesDependency
+target22.showInterface=false
+target38.type=InterfaceTarget
+dependency50.type=UsesDependency
+target13.type=ClassTarget
+dependency41.to=Firefull
+target27.typeParameters=
+world.lastInstantiated=Scenario1
+target23.y=0
+target23.x=0
+target32.name=BulletEnemy
+dependency47.from=MyWorld
+class.cloud.image=cloud.png
+dependency22.from=Scenario1
+dependency35.to=Enemy
+target9.typeParameters=
+target27.height=50
+target8.name=Boss
+dependency74.from=Firefull
+target7.y=0
+target27.width=100
+target7.x=0
+target30.height=50
+target3.height=50
+dependency29.to=Enemy
+dependency10.type=UsesDependency
+dependency62.type=UsesDependency
+dependency76.to=Enemy
+target12.y=0
+target12.x=0
+target3.type=ClassTarget
+dependency61.from=user2
+target22.height=50
+dependency37.type=UsesDependency
+target6.width=100
+target7.typeParameters=
+dependency30.to=Player
+class.FireSingle.superclass=greenfoot.Actor
+target27.type=ClassTarget
+dependency2.type=UsesDependency
+target19.name=Bullet
+target35.typeParameters=
+dependency24.to=Boss
+target21.name=user2
+dependency36.from=Monkeyrole
+target18.height=50
+target13.width=130
+class.user1.superclass=PickRoles
+dependency18.to=SimpleTimer
+dependency71.to=HealthNormal
+dependency1.from=Factory
+dependency49.type=UsesDependency
+dependency7.to=SimpleTimer
+dependency24.type=UsesDependency
+dependency76.type=UsesDependency
+dependency51.type=UsesDependency
+dependency65.to=Player
+target19.showInterface=false
+target14.type=ClassTarget
+target37.y=0
+target33.name=Firefull
+target37.x=0
+class.Context.superclass=greenfoot.Actor
+dependency48.from=MyWorld
+class.user2.superclass=PickRoles
+dependency59.to=Monkey
+class.roleChoice.superclass=greenfoot.Actor
+target33.typeParameters=
+dependency23.from=Scenario1
+target9.name=Enemy
+dependency75.from=Firefull
+dependency50.from=MyWorld
+target13.height=50
+dependency11.type=UsesDependency
+dependency13.to=BulletEnemy
+dependency63.type=UsesDependency
+target16.showInterface=false
+dependency2.to=SmallEnemy
+dependency60.to=Pig
+target26.y=0
+target26.x=0
+dependency10.from=Boss
+target4.type=ClassTarget
+dependency62.from=user2
+dependency38.type=UsesDependency
+dependency54.to=Monkey
+class.SmallEnemy.superclass=Enemy
+editor.fx.0.height=0
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 class.Enemy.superclass=greenfoot.Actor
 target28.type=ClassTarget
 dependency3.type=UsesDependency
 target13.showInterface=false
+<<<<<<< HEAD
 dependency48.to=items
 target2.y=0
 target2.x=0
 target22.name=user1
 dependency37.from=MyWorld
+=======
+dependency48.to=user2
+target2.y=0
+target2.x=0
+target22.name=EnemyBullet
+dependency37.from=Monkeyrole
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 target31.width=80
 target34.height=50
 target15.y=0
 target15.x=0
 dependency2.from=Factory
+<<<<<<< HEAD
 target26.width=100
 target7.height=50
 dependency25.type=UsesDependency
+=======
+target26.width=80
+target7.height=50
+dependency25.type=UsesDependency
+dependency77.type=UsesDependency
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 target37.typeParameters=
 dependency52.type=UsesDependency
 target15.type=ClassTarget
 target10.showInterface=false
+<<<<<<< HEAD
 class.Rice.image=rice
 target34.name=longBrick
 dependency49.from=user1
@@ -241,6 +456,31 @@ class.Pigrole.superclass=player
 readme.width=47
 dependency11.from=Enemy
 target5.type=InterfaceTarget
+=======
+target34.name=Pig
+dependency49.from=MyWorld
+dependency43.to=SimpleTimer
+dependency24.from=Scenario1
+version=3.0.0
+target22.width=100
+dependency76.from=HealthPower
+target26.height=50
+dependency51.from=Context
+target4.showInterface=false
+target17.width=80
+target5.width=80
+dependency37.to=EnemyBullet
+target2.height=50
+dependency12.type=UsesDependency
+dependency64.type=UsesDependency
+class.Firefull.superclass=greenfoot.Actor
+class.Pigrole.superclass=Player
+readme.width=47
+dependency11.from=Boss
+target5.type=ClassTarget
+dependency78.to=Player
+dependency63.from=Player
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 target1.width=90
 dependency39.type=UsesDependency
 target32.y=0
@@ -248,6 +488,7 @@ target1.showInterface=false
 target32.x=0
 target21.height=50
 target36.showInterface=false
+<<<<<<< HEAD
 target29.type=InterfaceTarget
 dependency4.type=UsesDependency
 dependency32.to=Monkey
@@ -277,10 +518,43 @@ class.Bag.image=bag.png
 dependency25.from=Scenario1
 target35.width=100
 dependency52.from=user2
+=======
+target29.type=ClassTarget
+dependency4.type=UsesDependency
+dependency32.to=Scenario1
+target23.name=Player
+dependency38.from=Monkeyrole
+simulation.speed=49
+dependency26.to=BulletEnemy
+target10.typeParameters=
+target29.y=0
+target29.x=0
+target17.height=50
+dependency3.from=Factory
+dependency26.type=UsesDependency
+target21.y=0
+target33.showInterface=false
+dependency78.type=UsesDependency
+target21.x=0
+dependency73.to=Player
+dependency53.type=UsesDependency
+target16.type=ClassTarget
+dependency9.to=Scenario1
+target35.name=HealthPower
+target5.y=0
+target5.x=0
+dependency67.to=Bullet
+target10.name=fire
+dependency25.from=Scenario1
+dependency77.from=HealthPower
+target35.width=120
+dependency52.from=Context
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 target18.y=0
 target18.x=0
 target12.height=50
 dependency13.type=UsesDependency
+<<<<<<< HEAD
 dependency21.to=BulletEnemy
 target30.showInterface=false
 <<<<<<<=HEAD
@@ -322,15 +596,67 @@ dependency51.to=Enemy
 dependency26.from=Monkeyrole
 dependency53.from=user2
 target12.width=80
+=======
+dependency21.to=Enemy
+target30.showInterface=false
+dependency65.type=UsesDependency
+target10.y=0
+target10.x=0
+dependency40.type=UsesDependency
+dependency15.to=cloud
+class.MyWorld.image=background1.jpg
+target30.type=ClassTarget
+dependency4.to=Scenario1
+dependency12.from=Enemy
+target6.type=ClassTarget
+dependency64.from=Player
+dependency62.to=MyWorld
+target7.showInterface=false
+target9.width=80
+dependency5.type=UsesDependency
+target14.typeParameters=
+dependency56.to=Sandy
+class.fire.image=fire.png
+target24.name=Doublefire
+dependency39.from=Monkeyrole
+target21.width=80
+dependency10.to=Bullet
+dependency4.from=SmallEnemy
+target33.height=50
+target16.width=80
+target6.height=50
+dependency27.type=UsesDependency
+class.PickRoles.image=castle.png
+dependency79.type=UsesDependency
+target35.y=0
+target35.x=0
+class.State.superclass=
+dependency54.type=UsesDependency
+target17.type=ClassTarget
+class.Strategy.superclass=
+target36.name=State
+target11.name=Scenario1
+target12.typeParameters=
+dependency51.to=Strategy
+dependency26.from=Scenario1
+dependency78.from=State
+dependency53.from=Context
+target12.width=110
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 target25.height=50
 dependency45.to=Pig
 dependency14.type=UsesDependency
 target1.height=50
+<<<<<<< HEAD
+=======
+dependency66.type=UsesDependency
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 target22.typeParameters=
 target27.showInterface=false
 target24.y=0
 dependency41.type=UsesDependency
 target24.x=0
+<<<<<<< HEAD
 class.Sandy.image=sandyStand1.png
 dependency39.to=roleChoice
 class.Pig.superclass=roleChoice
@@ -344,10 +670,26 @@ target8.x=0
 dependency13.from=Scenario1
 target7.type=ClassTarget
 dependency40.from=MyWorld
+=======
+class.Sandy.image=ChoiceSandy.png
+dependency39.to=Context
+class.Pig.superclass=roleChoice
+target31.type=ClassTarget
+target4.typeParameters=
+class.Monkey.image=ChoiceMonkey.png
+target8.y=0
+target18.typeParameters=
+target8.x=0
+dependency13.from=Enemy
+target7.type=ClassTarget
+dependency65.from=Doublefire
+dependency40.from=Monkeyrole
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 target20.height=50
 class.Floor.superclass=greenfoot.Actor
 target1.name=roleChoice
 dependency6.type=UsesDependency
+<<<<<<< HEAD
 class.Bananas.image=bananas.png
 target24.showInterface=false
 class.updownCloud.superclass=Floor
@@ -357,6 +699,17 @@ target13.x=0
 target25.name=user2
 target20.typeParameters=
 dependency34.to=Sandy
+=======
+target24.showInterface=false
+class.updownCloud.superclass=Floor
+dependency40.to=Doublefire
+target13.y=0
+target13.x=0
+target25.name=Firesingle
+target20.typeParameters=
+class.Doublefire.superclass=greenfoot.Actor
+dependency34.to=Floor
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 target34.width=80
 dependency5.from=SmallEnemy
 target2.typeParameters=
@@ -364,7 +717,11 @@ class.BulletEnemy.superclass=greenfoot.Actor
 class.Boss.image=baby2.png
 dependency28.type=UsesDependency
 target16.typeParameters=
+<<<<<<< HEAD
 dependency28.to=EnemyBullet
+=======
+dependency28.to=BulletEnemy
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 target30.typeParameters=
 dependency55.type=UsesDependency
 target18.type=ClassTarget
@@ -372,6 +729,7 @@ dependency30.type=UsesDependency
 target21.showInterface=false
 class.bricks.superclass=Floor
 target37.name=Sandyrole
+<<<<<<< HEAD
 target20.type=ClassTarget
 target12.name=Bananas
 target26.typeParameters=
@@ -382,6 +740,22 @@ dependency54.from=user2
 target25.width=80
 target8.typeParameters=
 dependency15.type=UsesDependency
+=======
+dependency75.to=Bullet
+target20.type=ClassTarget
+target12.name=updownCloud
+target26.typeParameters=
+dependency27.from=Scenario1
+dependency79.from=Strategy
+target30.width=80
+target38.height=50
+dependency54.from=user1
+dependency69.to=Player
+target25.width=90
+target8.typeParameters=
+dependency15.type=UsesDependency
+dependency67.type=UsesDependency
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 dependency42.type=UsesDependency
 target38.y=0
 target38.x=0
@@ -393,14 +767,23 @@ class.Monkeyrole.image=monkeyStandR1.png
 class.Bullet.superclass=greenfoot.Actor
 dependency14.from=Scenario1
 target8.type=ClassTarget
+<<<<<<< HEAD
 dependency17.to=SimpleTimer
 dependency6.to=Floor
 dependency41.from=MyWorld
+=======
+dependency17.to=tang
+dependency70.to=State
+dependency66.from=Doublefire
+dependency6.to=Floor
+dependency41.from=Monkeyrole
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 target24.typeParameters=
 target4.width=80
 target38.showInterface=false
 target2.name=Obstacle
 dependency7.type=UsesDependency
+<<<<<<< HEAD
 target6.typeParameters=
 target26.name=EnemyBullet
 target27.y=0
@@ -409,6 +792,18 @@ target34.typeParameters=
 dependency58.to=UserWorldAdapter
 class.Factory.superclass=
 target29.height=50
+=======
+dependency64.to=updownCloud
+target6.typeParameters=
+target26.name=Pigrole
+target27.y=0
+target27.x=0
+target34.typeParameters=
+dependency58.to=Enemy
+class.Factory.superclass=
+target29.height=50
+class.HealthPower.superclass=greenfoot.Actor
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 dependency6.from=tang
 target11.width=80
 class.Obstacle.superclass=greenfoot.Actor
@@ -416,12 +811,17 @@ dependency29.type=UsesDependency
 class.SimpleTimer.superclass=
 target5.height=50
 target35.showInterface=false
+<<<<<<< HEAD
 dependency12.to=BulletEnemy
+=======
+dependency12.to=Scenario1
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 dependency56.type=UsesDependency
 target3.y=0
 target3.x=0
 target19.type=ClassTarget
 dependency31.type=UsesDependency
+<<<<<<< HEAD
 dependency1.to=SimpleTimer
 target18.showInterface=false
 target38.name=items
@@ -473,11 +873,67 @@ target24.width=80
 dependency36.to=user2
 target6.showInterface=false
 class.Brush.superclass=items
+=======
+dependency1.to=Enemy
+target18.showInterface=false
+target38.name=Strategy
+target21.type=ClassTarget
+mainWindow.y=-9
+target13.name=HealthNormal
+mainWindow.x=-9
+target16.y=0
+target16.x=0
+dependency28.from=HealthNormal
+dependency55.from=user1
+target32.typeParameters=
+dependency30.from=HealthNormal
+dependency53.to=Firesingle
+target24.height=50
+target38.width=80
+dependency16.type=UsesDependency
+class.Player.superclass=greenfoot.Actor
+dependency68.type=UsesDependency
+target32.showInterface=false
+dependency43.type=UsesDependency
+dependency47.to=user1
+target28.typeParameters=
+class.MyWorld.superclass=greenfoot.World
+dependency70.type=UsesDependency
+target15.showInterface=false
+readme.name=@README
+target33.type=ClassTarget
+dependency15.from=Scenario1
+target9.type=AbstractTarget
+dependency67.from=Firesingle
+class.Monkeyrole.superclass=Player
+dependency42.from=Monkeyrole
+readme.y=10
+target16.height=50
+target9.showInterface=false
+readme.x=10
+target38.typeParameters=
+target3.name=Monkey
+target29.width=80
+dependency8.type=UsesDependency
+class.Scenario1.superclass=greenfoot.World
+target27.name=SimpleTimer
+target12.showInterface=false
+class.EnemyBullet.superclass=greenfoot.Actor
+dependency42.to=StateContext
+target33.y=0
+target33.x=0
+class.Sandyrole.superclass=Player
+dependency7.from=tang
+target24.width=100
+dependency36.to=BulletEnemy
+target6.showInterface=false
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 dependency57.type=UsesDependency
 target11.height=50
 target8.width=80
 dependency32.type=UsesDependency
 target36.typeParameters=
+<<<<<<< HEAD
 editor.fx.0.width=800
 target39.name=SingletonBags
 target22.type=ClassTarget
@@ -489,16 +945,34 @@ dependency56.from=user2
 target37.height=50
 >>>>>>>=399250f67e3ff18b6a080db7e8b47fe2517c8f15
 dependency31.from=Monkeyrole
+=======
+editor.fx.0.width=0
+target22.type=ClassTarget
+target14.name=Monkeyrole
+class.Pig.image=ChoicePig.png
+dependency29.from=HealthNormal
+dependency77.to=Player
+target20.width=80
+dependency56.from=user1
+target37.height=50
+class.Bullet.image=beeper.png
+dependency31.from=HealthNormal
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 target22.y=0
 class.longBrick.image=longBrick.png
 target22.x=0
 target15.width=80
 target3.showInterface=false
 dependency17.type=UsesDependency
+<<<<<<< HEAD
+=======
+dependency69.type=UsesDependency
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 dependency44.type=UsesDependency
 target29.showInterface=false
 target6.y=0
 target6.x=0
+<<<<<<< HEAD
 dependency31.to=BulletEnemy
 package.numDependencies=61
 target34.type=ClassTarget
@@ -527,10 +1001,46 @@ dependency8.from=tang
 target28.height=50
 class.user2.image=red-draught.png
 dependency20.to=Bullet
+=======
+dependency31.to=Monkeyrole
+package.numDependencies=79
+dependency71.type=UsesDependency
+target34.type=ClassTarget
+class.fire.superclass=Obstacle
+dependency16.from=Scenario1
+dependency25.to=Bullet
+target19.y=0
+target19.x=0
+dependency68.from=Firesingle
+target9.height=50
+dependency43.from=Monkeyrole
+target32.height=50
+target11.y=0
+dependency70.from=StateContext
+target4.name=Factory
+target11.x=0
+dependency19.to=updownCloud
+dependency9.type=UsesDependency
+dependency72.to=HealthPower
+editor.fx.0.y=0
+editor.fx.0.x=0
+dependency8.to=MyWorld
+target26.showInterface=false
+target28.name=StateContext
+dependency66.to=Bullet
+class.bricks.image=brick.png
+mainWindow.height=1048
+dependency8.from=tang
+class.SmallEnemy.image=robot.png
+target28.height=50
+class.user2.image=red-draught.png
+dependency20.to=longBrick
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 target4.height=50
 dependency58.type=UsesDependency
 dependency33.type=UsesDependency
 target23.showInterface=false
+<<<<<<< HEAD
 dependency14.to=cloud
 target23.type=ClassTarget
 target15.name=Scenario1
@@ -539,11 +1049,21 @@ dependency57.from=user2
 class.Brush.image=brush.png
 dependency61.to=items
 dependency32.from=MyWorld
+=======
+dependency14.to=bricks
+target23.type=ClassTarget
+target15.name=MyWorld
+dependency3.to=Boss
+dependency57.from=user1
+dependency61.to=Sandy
+dependency32.from=Monkeyrole
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 target33.width=80
 target36.y=0
 target36.x=0
 target23.height=50
 dependency18.type=UsesDependency
+<<<<<<< HEAD
 target28.width=100
 project.charset=UTF-8
 dependency55.to=MyWorld
@@ -559,16 +1079,44 @@ dependency44.from=user1
 class.longBrick.superclass=Floor
 target15.height=50
 target5.name=WorldSwapWorld
+=======
+target28.width=120
+project.charset=UTF-8
+dependency55.to=Pig
+dependency45.type=UsesDependency
+dependency20.type=UsesDependency
+target20.showInterface=false
+dependency72.type=UsesDependency
+target35.type=ClassTarget
+target10.type=ClassTarget
+dependency49.to=PickRoles
+dependency17.from=Scenario1
+dependency69.from=Firesingle
+dependency44.from=MyWorld
+class.longBrick.superclass=Floor
+target15.height=50
+target5.name=cloud
+dependency71.from=StateContext
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 target25.y=0
 target25.x=0
 target19.width=80
 target7.width=80
+<<<<<<< HEAD
 target29.name=UserSwapWorld
 target13.typeParameters=
 target9.y=0
 target9.x=0
 dependency50.to=UserWorldAdapter
 class.Couplet.superclass=items
+=======
+class.Firesingle.superclass=greenfoot.Actor
+target29.name=PickRoles
+target13.typeParameters=
+target9.y=0
+target9.x=0
+dependency50.to=Scenario1
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 target1.y=0
 dependency9.from=tang
 target1.x=0
@@ -579,6 +1127,10 @@ dependency34.type=UsesDependency
 target14.y=0
 target10.height=50
 target14.x=0
+<<<<<<< HEAD
 class.Bag.superclass=greenfoot.Actor
 dependency38.to=Scenario1
 =\=\=\=\=\=\=
+=======
+dependency38.to=Firesingle
+>>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4

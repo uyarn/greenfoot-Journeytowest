@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Pigrole extends player
+public class Pigrole extends Player
 {
     /**
      * Act - do whatever the Pigrole wants to do. This method is called whenever
