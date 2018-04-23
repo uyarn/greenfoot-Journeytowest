@@ -28,10 +28,11 @@ public class MyWorld extends World implements WorldSwapWorld
       System.out.println("test");
       this.roleChoice+=1;
       if(this.roleChoice==2){
+        this.roleChoice=0;
         List objects = getObjects(null);
         removeObjects(objects);
-        Scenario1 dark = new Scenario1();
-         Greenfoot.setWorld(dark);
+        
+        Greenfoot.setWorld(new Scenario1());
         }
     }
     
@@ -55,7 +56,6 @@ public class MyWorld extends World implements WorldSwapWorld
         addObject(user2,72,306);
 
         // Set the position of the Role choice
-        
-        
+
     }
 }
