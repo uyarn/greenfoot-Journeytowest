@@ -39,7 +39,9 @@ public class Pigrole extends Player
         this.role = dicision;
         this.sce=sce;
         this.health=health;
-        
+        GreenfootImage image = getImage();  
+        image.scale(40, 40); 
+        setImage(image);
     }
     
     

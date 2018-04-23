@@ -21,10 +21,10 @@ public class user1 extends PickRoles implements UserSwapWorld
     }
     
     // implement the userSwapWorld
-    public void trySwapWorld(){
+    public void trySwapWorld(String str){
         
       userCallWorld = new UserWorldAdapter();
-      userCallWorld.trySwapWorld();
+      userCallWorld.trySwapWorld(str);
     }
     
     
@@ -38,7 +38,7 @@ public class user1 extends PickRoles implements UserSwapWorld
         if ( Greenfoot.isKeyDown("right") ){
             move(18);
         }
-        if ( Greenfoot.isKeyDown("enter") ){
+        if ( Greenfoot.isKeyDown("down") ){
 
            
             
@@ -46,20 +46,20 @@ public class user1 extends PickRoles implements UserSwapWorld
                 removeTouching(Monkey.class);
                
                 getWorld().removeObject(this);
-                trySwapWorld();
+                trySwapWorld("M");
             }
             else{
               if(isTouching(Pig.class)){
                   removeTouching(Pig.class);
                   
                   getWorld().removeObject(this);
-                  trySwapWorld();
+                  trySwapWorld("P");
               }
               else{
                 if(isTouching(Sandy.class)){
                     removeTouching(Sandy.class);
                    getWorld().removeObject(this);
-                   trySwapWorld();
+                   trySwapWorld("S");
                 }
               }
             }

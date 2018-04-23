@@ -1,10 +1,6 @@
 #BlueJ class context
 comment0.target=EnemyBullet
-<<<<<<< HEAD
 comment0.text=\n\ Write\ a\ description\ of\ class\ Bullet\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
-=======
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Bullet\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
->>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
 comment1.params=speed
 comment1.target=EnemyBullet(int)
 comment2.params=

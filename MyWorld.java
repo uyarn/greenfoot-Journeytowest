@@ -16,7 +16,7 @@ public class MyWorld extends World implements WorldSwapWorld
      */
     
     public static int roleChoice = 0;
-    
+    public static String choiceList[]= new String[2];
     public MyWorld()
     {    
         // Create a new world with 600x350 cells with a cell size of 1x1 pixels.
@@ -24,15 +24,18 @@ public class MyWorld extends World implements WorldSwapWorld
         setBackground("background1.jpg");
         prepare();
     }
-    public void worldSwapWorld(){
-      System.out.println("test");
+    public void worldSwapWorld(String str){
+      System.out.println(str);
+      this.choiceList[this.roleChoice]=str;
       this.roleChoice+=1;
       if(this.roleChoice==2){
         this.roleChoice=0;
+        
         List objects = getObjects(null);
         removeObjects(objects);
         
-        Greenfoot.setWorld(new Scenario1());
+        Greenfoot.setWorld(new Scenario1(choiceList));
+        this.choiceList=new String[2];
         }
     }
     

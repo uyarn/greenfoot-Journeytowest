@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Pigrole extends Player
+public class Sandyrole extends Player
 {
     /**
      * Act - do whatever the Monkeyrole wants to do. This method is called whenever
@@ -34,12 +34,14 @@ public class Pigrole extends Player
     private int num=1;
     
     
-    public Pigrole(Boolean dicision,Scenario1 sce,int health)
+    public Sandyrole(Boolean dicision,Scenario1 sce,int health)
     {
         this.role = dicision;
         this.sce=sce;
         this.health=health;
-        
+        GreenfootImage image = getImage();  
+        image.scale(40, 40); 
+        setImage(image);
     }
     
     
@@ -70,13 +72,13 @@ public class Pigrole extends Player
             if(Greenfoot.isKeyDown("Left") ){
                move(-4);
                leftright=false;
-               setImage("pigStand1.png");
+               setImage("sandyStand1.png");
             }
         
             if( Greenfoot.isKeyDown("Right")){
                 move(4);
                 leftright=true;
-                setImage("pigStand2.png");
+                setImage("sandyStand2.png");
             }
             
              if (!upIsDown && Greenfoot.isKeyDown("Up")){

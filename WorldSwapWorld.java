@@ -8,6 +8,6 @@ public interface WorldSwapWorld
 {
     // instance variables - replace the example below with your own
    
-    public void worldSwapWorld();
+    public void worldSwapWorld(String str);
     
 }

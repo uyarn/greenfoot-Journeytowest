@@ -24,24 +24,34 @@ public class Scenario1 extends World
      List<BulletEnemy> enemybullets=new ArrayList<BulletEnemy>();
      Enemy enemy=new SmallEnemy(100,200);
      
-     Monkeyrole monkey = new Monkeyrole(false,this,30);
-     Monkeyrole monkey2 = new Monkeyrole(true,this,30);
+     Player play1 ;
+     Player play2 = new Monkeyrole(true,this,30);
 //    Enemy enemy2=new Enemy();
     
    
-    public Scenario1()
+    public Scenario1(String str[])
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1024, 489, 1); 
-        
         setBackground("dark1.jpg");
-        
+        switch(str[0]){
+          case"M":play1 =new Monkeyrole(false,this,30);break;
+          case"P":play1 =new Pigrole(false,this,30);break;
+          case"S":play1 =new Sandyrole(false,this,30);break;
+          default:break;
+        }
+        switch(str[1]){
+          case"M":play2 =new Monkeyrole(true,this,30);break;
+          case"P":play2 =new Pigrole(true,this,30);break;
+          case"S":play2 =new Sandyrole(true,this,30);break;
+          default:break;
+        }
         prepare();
         act();
     }
     public void playerDie(){
         playerStatus--;
-        showText("Hello world", 100, 100);
+        
         if(playerStatus==0)
            GameOver();
     
@@ -316,8 +326,8 @@ public class Scenario1 extends World
         //        addObject(enemy2,300,200);
         //        enemy2.setLocation(684,33);
 
-        addObject(monkey,80,410);
-        addObject(monkey2,80,410);
+        addObject(play1,80,410);
+        addObject(play2,80,410);
 
         Boss boss = new Boss(800, 900);
         addObject(boss,812,235);

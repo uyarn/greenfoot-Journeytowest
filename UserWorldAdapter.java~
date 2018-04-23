@@ -13,10 +13,10 @@ public class UserWorldAdapter implements UserSwapWorld
      * Constructor for objects of class UserWorldAdapter
      */
     public UserWorldAdapter(){
-    
+      swapWorld = new MyWorld();
     };
 
-    public void trySwapWorld(){
+    public void trySwapWorld(String str){
         swapWorld.worldSwapWorld();
     }
     

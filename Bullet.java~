@@ -24,7 +24,7 @@ public class Bullet extends Actor
     
     public Bullet(Boolean dir,boolean live)
     {
-        this.direction = dir;
+        direction = dir;
         this.live=live;
     }
     

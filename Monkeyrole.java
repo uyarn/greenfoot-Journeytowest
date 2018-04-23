@@ -39,6 +39,7 @@ public class Monkeyrole extends Player
         this.role = dicision;
         this.sce=sce;
         this.health=health;
+        
     }
     
     
@@ -51,9 +52,7 @@ public class Monkeyrole extends Player
             health = health - 10;
         
         } 
-<<<<<<< HEAD
-        if(role){
-=======
+
         
         if(Greenfoot.isKeyDown("1") ){
            num=1;
@@ -67,7 +66,7 @@ public class Monkeyrole extends Player
         }
         
         if(role){            
->>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
+
             if(Greenfoot.isKeyDown("Left") ){
                move(-4);
                leftright=false;
@@ -168,11 +167,7 @@ public class Monkeyrole extends Player
              }                          
         }
         
-<<<<<<< HEAD
-        //this.healthCount();
-=======
-//        this.healthCount();
->>>>>>> 541772b93e4ef588020a8e4f7208c3a61aee7fc4
+
         
         if(this!=null){
 //            status();

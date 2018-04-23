@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=SmallEnemy
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ SmallEnemy\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ SmallEnemy\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=left\ right
 comment1.target=SmallEnemy(int,\ int)
 comment2.params=

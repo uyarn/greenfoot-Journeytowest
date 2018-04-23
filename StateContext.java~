@@ -44,7 +44,7 @@ public class StateContext extends Actor
 //        System.out.println(health);
 //        System.out.println(status+"11111");
 //        System.out.println(player);
-         System.out.println(status);
+        
         if (10<health&&health<=30){
             state= new HealthNormal();
         }
