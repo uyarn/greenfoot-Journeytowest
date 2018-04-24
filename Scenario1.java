@@ -34,16 +34,17 @@ public class Scenario1 extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1024, 489, 1); 
         setBackground("dark1.jpg");
+        
         switch(str[0]){
-          case"M":play1 =new Monkeyrole(false,this,30);break;
-          case"P":play1 =new Pigrole(false,this,30);break;
-          case"S":play1 =new Sandyrole(false,this,30);break;
+          case"M":play1 =new Monkeyrole(true,this,30);break;
+          case"P":play1 =new Pigrole(true,this,30);break;
+          case"S":play1 =new Sandyrole(true,this,30);break;
           default:break;
         }
         switch(str[1]){
-          case"M":play2 =new Monkeyrole(true,this,30);break;
-          case"P":play2 =new Pigrole(true,this,30);break;
-          case"S":play2 =new Sandyrole(true,this,30);break;
+          case"M":play2 =new Monkeyrole(false,this,30);break;
+          case"P":play2 =new Pigrole(false,this,30);break;
+          case"S":play2 =new Sandyrole(false,this,30);break;
           default:break;
         }
         prepare();

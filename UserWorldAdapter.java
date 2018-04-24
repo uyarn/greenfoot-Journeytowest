@@ -16,8 +16,8 @@ public class UserWorldAdapter implements UserSwapWorld
       swapWorld = new MyWorld();
     };
 
-    public void trySwapWorld(String str){
-        swapWorld.worldSwapWorld(str);
+    public void trySwapWorld(String str,int position){
+        swapWorld.worldSwapWorld(str,position);
     }
     
 }

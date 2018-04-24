@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=UserSwapWorld
 comment0.text=\n\ Write\ a\ description\ of\ class\ UserChangeWorld\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
-comment1.params=str
-comment1.target=void\ trySwapWorld(java.lang.String)
+comment1.params=str\ position
+comment1.target=void\ trySwapWorld(java.lang.String,\ int)
 numComments=2

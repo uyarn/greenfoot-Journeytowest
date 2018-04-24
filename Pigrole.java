@@ -123,13 +123,13 @@ public class Pigrole extends Player
              if(Greenfoot.isKeyDown("A") ){
                 move(-4);
                 leftright=false;
-                setImage("monkeyStandL1.png");
+                setImage("pigStand1.png");
              }
         
             if( Greenfoot.isKeyDown("D")){
                 move(4);
                 leftright=true;
-                setImage("monkeyStandR1.png");
+                setImage("pigStand2.png");
             }
             
             if (!wIsDown && Greenfoot.isKeyDown("W")){

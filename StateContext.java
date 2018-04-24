@@ -47,18 +47,18 @@ public class StateContext extends Actor
          System.out.println(status);
         if (10<health&&health<=30){
             state= new HealthNormal();
+            state.healthControl(bulletEnemy,enemy,enemy_touch,player);
         }
         if (health==10&&status==false){
             state=new HealthPower();
+            state.healthControl(bulletEnemy,enemy,enemy_touch,player);
         }
         if(health==10 &&status==true){
-            System.out.println(status);
+            
             state=new HealthNormal();
+            state.healthControl(bulletEnemy,enemy,enemy_touch,player);
         }
-        else{
-            state=new HealthNormal();
-        }
-        state.healthControl(bulletEnemy,enemy,enemy_touch,player);
+        
         
     }
     

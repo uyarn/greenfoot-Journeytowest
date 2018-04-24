@@ -24,18 +24,16 @@ public class MyWorld extends World implements WorldSwapWorld
         setBackground("background1.jpg");
         prepare();
     }
-    public void worldSwapWorld(String str){
-      System.out.println(str);
-      this.choiceList[this.roleChoice]=str;
+    public void worldSwapWorld(String str,int position ){
+      
+      this.choiceList[position]=str;
       this.roleChoice+=1;
       if(this.roleChoice==2){
         this.roleChoice=0;
-        
         List objects = getObjects(null);
         removeObjects(objects);
-        
         Greenfoot.setWorld(new Scenario1(choiceList));
-        this.choiceList=new String[2];
+        
         }
     }
     
@@ -57,7 +55,6 @@ public class MyWorld extends World implements WorldSwapWorld
         addObject(user1,72,280);
         user2 user2 = new user2();
         addObject(user2,72,306);
-
         // Set the position of the Role choice
 
     }
