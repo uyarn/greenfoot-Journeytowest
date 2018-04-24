@@ -18,7 +18,7 @@ public abstract class Enemy extends Actor
     private Scenario1 sce;
     private double lastShot;
     int HP =20;
-    int speed;
+    int speed = 1;
     int left ;
     int right;
     

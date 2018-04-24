@@ -27,6 +27,8 @@ public class HealthNormal extends Actor implements State
     //    Actor enemy = getOneIntersectingObject(Enemy.class);
         
         if(enemy!=null){
+            Scenario1 sc1 =(Scenario1) player.getWorld();
+            sc1.playerDie();
             player.getWorld().removeObject(player);
         }
          

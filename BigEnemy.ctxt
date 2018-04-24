@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=BigEnemy
+comment0.text=\n\ Write\ a\ description\ of\ class\ BigEnemy\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=left\ right
+comment1.target=BigEnemy(int,\ int)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ mover()
+comment4.params=
+comment4.target=Enemy\ clone()
+comment5.params=HP
+comment5.target=void\ judge(int)
+comment6.params=start\ end
+comment6.target=int\ getRandomNumber(int,\ int)
+numComments=7

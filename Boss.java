@@ -49,11 +49,26 @@ public class Boss extends Enemy
             move(speed);
             shooter();
         }
+        if(isTouching(Bullet.class))
+        {
+            getWorld().removeObject(getOneIntersectingObject(Bullet.class));
+            HP = HP - 2;
+            
+        }
+        judge(HP);
     }
     
     public Enemy clone()
     {
         return null;
+    }
+    public void judge(int HP)
+    {
+        World w = getWorld();
+        if(HP<=0)
+        {
+          w.removeObject(this);
+        }
     }
     
     public void shooter()

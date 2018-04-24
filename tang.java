@@ -15,6 +15,7 @@ public class tang extends Actor
     private SimpleTimer timer = new SimpleTimer();
     //private int LiveTime = 1000;
      private int LiveTime = 60000;
+     public boolean done =false;
     public tang(){
         
         GreenfootImage image = getImage();  
@@ -40,6 +41,29 @@ public class tang extends Actor
            Scenario1 world = (Scenario1) getWorld();
            world.GameOver();
         }
-        
+        if(isTouching(Player.class)){
+          SingletonBags bag = SingletonBags.getInstance();
+          if(bag.getChild().size()==2){
+              if(bag.getChild().get(0) instanceof Box){
+                   Box hasBox =(Box) bag.getChild().get(0);
+                   Shelf hasShelf = (Shelf) bag.getChild().get(1);
+                   if(hasBox.getChild().size()==2&&hasShelf.getChild().size()==3){
+                     done=true;
+                    }
+                }
+                else{
+                Box hasBox =(Box) bag.getChild().get(1);
+                   Shelf hasShelf = (Shelf) bag.getChild().get(0);
+                   if(hasBox.getChild().size()==2&&hasShelf.getChild().size()==3){
+                     done=true;
+                    }
+                }
+             
+            }
+           if(done){
+               Scenario1 sc = (Scenario1) getWorld();
+               sc.GameFinish();
+            }
+        }
     }    
 }

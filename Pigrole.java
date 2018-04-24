@@ -170,12 +170,12 @@ public class Pigrole extends Player
 
         
         if(this!=null){
-//            status();
+
                if(this.health<20&&this.health>0){
                    if(this.status==false){//无敌状态
                       if (timer>0){
                        timer=timer-60;
-                       System.out.println(timer);
+                      
                        if(timer<=0){
                            this.status=true;
                            return;
@@ -210,78 +210,16 @@ public class Pigrole extends Player
             world.playerDie();
             getWorld().removeObject(this);
         }
-        
+        if(isAtEdge()&&getY()>=470){
+           Scenario1 scn =(Scenario1) getWorld();
+           scn.playerDie();
+           getWorld().removeObject(this);
+        }
         
         
        
         
     }    
-    
-    
-    private void status(){
-        if(this.health<20&&this.health>0){
-            this.status=false;
-            if (timer>0)
-            {
-                Actor enemy_touch = getOneIntersectingObject(Enemy.class);
-                if(enemy_touch != null){
-                    getWorld().removeObject(enemy_touch);
-                }
-                timer=timer-60;
-                if(timer == 0) {
-                    this.status=false;
-                    return;
-                }
-            }
-        }
-    }
-    
-    
-    private void healthCount(){
-        Actor bulletEnemy = getOneIntersectingObject(BulletEnemy.class);
-        
-        Actor enemy = getOneIntersectingObject(Enemy.class);
-        
-        if(enemy!=null&&this.status==true){
-            getWorld().removeObject(this);
-        }
-         
-        if (bulletEnemy != null)
-            {
-                getWorld().removeObject(bulletEnemy);
-                if ((health -= 10) <= 0) getWorld().removeObject(this);
-            }
-    }
-    //角色开火
-    private void fire(){
-         Bullet bullet = new Bullet(leftright,true);
-         Bullet bullet2 = new Bullet(leftright,true);
-         Bullet bullet3 = new Bullet(leftright,true);
-         Bullet bullet4 = new Bullet(leftright,true);
-         
-
-         if(leftright==true){
-             bullet2.setRotation(-30);
-             bullet3.setRotation(-120);
-             bullet4.setRotation(-180);
-             
-         }
-         else{
-             bullet2.setRotation(30);
-             bullet3.setRotation(120);
-             bullet4.setRotation(180);
-         }
-         
-         
-//         System.out.println(sce.bullets.size());
-         getWorld().addObject(bullet, getX(), getY());
-         getWorld().addObject(bullet2, getX(), getY());
-         getWorld().addObject(bullet3, getX(), getY());
-         getWorld().addObject(bullet4, getX(), getY());
-         
-        
-    }
-    
-    
+   
     
 }

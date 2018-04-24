@@ -1,5 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.List;
+import java.util.ArrayList;
 /**
  * Write a description of class items here.
  * 
@@ -17,7 +18,7 @@ public abstract class items extends Actor
     // remove items methods
     public abstract void remove(items item); 
     
-    public abstract items getChild(int i);  
+    public abstract List<items> getChild();  
     
     public  void act() 
     {

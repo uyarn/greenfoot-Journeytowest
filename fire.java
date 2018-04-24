@@ -22,5 +22,10 @@ public class fire extends Obstacle
     {
         // Add your action code here.
         turn(4);
+        if(isTouching(Player.class)){
+          Scenario1 sc1= (Scenario1) getWorld();
+          sc1.playerDie();
+          getWorld().removeObject(getOneIntersectingObject(Player.class));
+         }
     }    
 }

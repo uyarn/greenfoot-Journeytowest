@@ -16,23 +16,25 @@ public class SingletonBags extends items
     
     private static List<items> items = new ArrayList<items>();
     // Singleton instance Method
-    private static SingletonBags instance;
-    private SingletonBags (){}
+    private static SingletonBags instance=new SingletonBags();;
+    private SingletonBags (){   
+       
+    }
     
    public static SingletonBags getInstance(){
       return instance;
    }
     // add items methods
     public void add(items item){
-    
+       items.add(item);
     }; 
     // remove items methods
     public void remove(items item){
     
     }; 
     
-    public items getChild(int i){
-      return null;
+    public List<items> getChild(){
+      return items;
     }
     public void act() 
     {

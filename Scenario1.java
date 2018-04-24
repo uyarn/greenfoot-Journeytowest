@@ -20,7 +20,7 @@ public class Scenario1 extends World
     
      List<Bullet> bullets=new ArrayList<Bullet>();
      static int playerStatus=2;
-     
+     SimpleTimer countTime = new SimpleTimer();
      List<BulletEnemy> enemybullets=new ArrayList<BulletEnemy>();
      Enemy enemy=new SmallEnemy(100,200);
      SingletonBags bag = SingletonBags.getInstance();
@@ -34,7 +34,9 @@ public class Scenario1 extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1024, 489, 1); 
         setBackground("dark1.jpg");
-        
+        countTime.mark();
+        GreenfootSound backgroundMusic = new GreenfootSound("bgm.mp3");
+        backgroundMusic.playLoop();
         switch(str[0]){
           case"M":play1 =new Monkeyrole(true,this,30);break;
           case"P":play1 =new Pigrole(true,this,30);break;
@@ -52,13 +54,22 @@ public class Scenario1 extends World
     }
     public void playerDie(){
         playerStatus--;
-        
-        if(playerStatus==0)
-           GameOver();
+        System.out.println(playerStatus);
+        if(playerStatus==0){
+            GameOver();
+            playerStatus=2;
+        }
+           
     
     }
     public void GameOver(){
         showText("Game Over", 512, 244);
+        
+        Greenfoot.stop();
+    
+     }
+     public void GameFinish(){
+        showText("Finished!", 512, 244);
         
         Greenfoot.stop();
     
@@ -83,7 +94,7 @@ public class Scenario1 extends World
         bricks bricks4 = new bricks();
         addObject(bricks4,119,487);
         bricks4.setLocation(111,481);
-        cloud cloud = new cloud(400,169,3);
+        cloud cloud = new cloud(400,169,2);
         addObject(cloud,305,359);
         cloud.setLocation(169,469);
         bricks bricks5 = new bricks();
@@ -95,9 +106,6 @@ public class Scenario1 extends World
         fire fire = new fire();
         addObject(fire,416,226);
         fire.setLocation(313,318);
-        bricks bricks8 = new bricks();
-        addObject(bricks8,217,271);
-        bricks8.setLocation(209,260);
         fire fire2 = new fire();
         addObject(fire2,289,240);
         fire2.setLocation(269,256);
@@ -110,8 +118,7 @@ public class Scenario1 extends World
         addObject(bricks11,415,75);
         bricks11.setLocation(437,70);
         bricks11.setLocation(434,68);
-        bricks8.setLocation(85,133);
-        bricks8.setLocation(68,127);
+       
         fire2.setLocation(133,110);
         fire2.setLocation(131,105);
         bricks7.setLocation(127,190);
@@ -122,7 +129,7 @@ public class Scenario1 extends World
         fire.setLocation(185,165);
         fire.setLocation(183,174);
         fire2.setLocation(134,115);
-        cloud cloud2 = new cloud(340,204,7);
+        cloud cloud2 = new cloud(360,204,2);
         addObject(cloud2,204,72);
         cloud2.setLocation(200,67);
         bricks bricks17 = new bricks();
@@ -189,58 +196,33 @@ public class Scenario1 extends World
         fire8.setLocation(301,116);
         fire9.setLocation(259,118);
         fire10.setLocation(215,117);
-        bricks bricks25 = new bricks();
-        addObject(bricks25,1016,91);
-        bricks bricks26 = new bricks();
-        addObject(bricks26,989,96);
-        bricks26.setLocation(978,86);
-        bricks25.setLocation(1013,81);
-        bricks26.setLocation(980,83);
         tang.setLocation(987,38);
-        bricks26.setLocation(983,81);
-        bricks bricks27 = new bricks();
-        addObject(bricks27,959,87);
-        bricks27.setLocation(952,81);
+        
+        
         tang.setLocation(989,28);
         tang.setLocation(989,33);
         fire4.setLocation(681,102);
 
-        bricks bricks28 = new bricks();
-        addObject(bricks28,869,120);
-        bricks bricks29 = new bricks();
-        addObject(bricks29,906,126);
-        bricks29.setLocation(899,120);
-        bricks bricks30 = new bricks();
-        addObject(bricks30,846,127);
-        bricks30.setLocation(840,120);
+       
+        
         fire4.setLocation(690,101);
         fire6.setLocation(658,100);
 
         fire5.setLocation(628,92);
         fire4.setLocation(692,93);
         fire7.setLocation(345,115);
-        bricks27.setLocation(954,81);
+        
 
         bricks11.setLocation(439,69);
         bricks5.setLocation(209,284);
         bricks bricks31 = new bricks();
         addObject(bricks31,1016,186);
-        bricks29.setLocation(899,131);
-        bricks28.setLocation(869,131);
-        bricks30.setLocation(840,130);
-        bricks30.setLocation(839,131);
-        bricks29.setLocation(896,145);
-        bricks28.setLocation(866,144);
-        bricks30.setLocation(837,144);
+        
         bricks31.setLocation(1016,201);
-        bricks bricks32 = new bricks();
-        addObject(bricks32,993,207);
-        bricks32.setLocation(987,201);
-        bricks bricks33 = new bricks();
-        addObject(bricks33,964,208);
-        bricks33.setLocation(959,201);
+        ;
+        
 
-        cloud cloud3 = new cloud(800, 692, 4);
+        cloud cloud3 = new cloud(800, 692, 2);
         addObject(cloud3,692,474);
         bricks bricks38 = new bricks();
         addObject(bricks38,1018,488);
@@ -306,14 +288,12 @@ public class Scenario1 extends World
         addObject(longbrick10,88,314);
         longbrick10.setLocation(85,304);
 
-        addObject(bricks25,93,264);
-        bricks25.setLocation(88,253);
-        bricks25.setLocation(94,254);
-        bricks25.setLocation(86,260);
+      ;
+        
         bricks6.setLocation(152,234);
         bricks7.setLocation(111,183);
         fire.setLocation(175,171);
-        updownCloud updowncloud2 = new updownCloud(300, 450, 3);
+        updownCloud updowncloud2 = new updownCloud(300, 450, 2);
         addObject(updowncloud2,971,456);
         //        player player = new player();
         //        addObject(player,303,290);
@@ -332,14 +312,38 @@ public class Scenario1 extends World
         addObject(smallenemy,900,350);
         addObject(play1,80,410);
         addObject(play2,80,410);
-
+        Bananas banana =new Bananas();
+        addObject(banana,594,42);
+        Couplet couple =new Couplet();
+        addObject(couple ,592,172);
+        Rice rice =new Rice();
+        addObject(rice,570,246);
+        Shelf shelf =new Shelf();
+        addObject(shelf,580,304);
+        Box box =new Box();
+        addObject(box,115,39);
+        Scripture scri = new Scripture();
+        addObject(scri,580,373);
+        Scripture scri2 = new Scripture();
+        addObject(scri2,837,243);
         Enemy boss = factory.createEnemy(1,800,900);
-       
+        Enemy enemy2 = factory.createEnemy(0,200,280);
+        addObject(enemy2,250,420);
+        updownCloud upnew =new updownCloud(50,284,2);
+        addObject(upnew,48,284);
         addObject(boss,812,235);
+        longBrick longbricknew = new longBrick();
+        addObject(longbricknew,957,80);
+        updownCloud upnew2 =new updownCloud(100,240,2);
+        addObject(upnew2,844,240);
+        
     }
     
     public void act() {
-         
+        String timeRemain = ((120000-countTime.millisElapsed())/1000+"");
+        
+        if(Integer.parseInt(timeRemain)>=0)
+            showText(timeRemain, 50, 50);
         if(bullets.size()>0){
           for(int i=0; i<bullets.size();i++){
             Bullet bul=bullets.get(i);

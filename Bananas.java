@@ -1,5 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.List;
+import java.util.ArrayList;
 /**
  * Write a description of class Bananas here.
  * 
@@ -26,7 +27,7 @@ public class Bananas extends items
     public void remove(items item){
         // error operation
     }  
-    public items getChild(int i){
+    public List<items> getChild(){
       return null;   
     }
     public void act() 

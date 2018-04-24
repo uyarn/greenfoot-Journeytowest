@@ -20,7 +20,7 @@ public class MyWorld extends World implements WorldSwapWorld
     public MyWorld()
     {    
         // Create a new world with 600x350 cells with a cell size of 1x1 pixels.
-        super(600, 350, 1);
+        super(1024, 489, 1);
         setBackground("background1.jpg");
         prepare();
     }
@@ -57,5 +57,11 @@ public class MyWorld extends World implements WorldSwapWorld
         addObject(user2,72,306);
         // Set the position of the Role choice
 
+        sandy.setLocation(690,393);
+        pig.setLocation(472,402);
+        monkey.setLocation(310,400);
+        sandy.setLocation(631,394);
+        user1.setLocation(190,383);
+        user2.setLocation(192,413);
     }
 }

@@ -1,5 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.List;
+import java.util.ArrayList;
 /**
  * Write a description of class Strawberry here.
  * 
@@ -12,6 +13,7 @@ public class Box extends items
      * Act - do whatever the Strawberry wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    private static List<items> itemInBox = new ArrayList<items>();
     public Box()
     {
        GreenfootImage image = getImage();
@@ -19,16 +21,17 @@ public class Box extends items
        setImage(image);
     }
     public void add(items item){
-        // error operation
+       itemInBox.add(item);
+       ;
     }
     public void remove(items item){
-        // error operation
+       
     }  
-    public items getChild(int i){
-      return null;   
+    public List<items> getChild(){
+      return itemInBox;   
     }
     public void act() 
     {
-        // Add your action code here.
+       
     }    
 }
