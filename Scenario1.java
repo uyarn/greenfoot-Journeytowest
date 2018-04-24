@@ -322,15 +322,19 @@ public class Scenario1 extends World
 
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 以上是场景
 
-        addObject(enemy,300,200);
-        enemy.setLocation(384,400);
+        //addObject(enemy,300,200);
+        //enemy.setLocation(384,400);
         //        addObject(enemy2,300,200);
         //        enemy2.setLocation(684,33);
 
+        Factory factory = new Factory();
+        Enemy smallenemy = factory.createEnemy(0,850,950);
+        addObject(smallenemy,900,350);
         addObject(play1,80,410);
         addObject(play2,80,410);
 
-        Boss boss = new Boss(800, 900);
+        Enemy boss = factory.createEnemy(1,800,900);
+       
         addObject(boss,812,235);
     }
     
