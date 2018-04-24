@@ -14,9 +14,9 @@ public abstract class Enemy extends Actor
      */
     
     public boolean live;
-    private boolean leftright=true;
-    private Scenario1 sce;
-    private double lastShot;
+    //private boolean leftright=true;
+    //private Scenario1 sce;
+    //private double lastShot;
     int HP =20;
     int speed = 1;
     int left ;
@@ -25,10 +25,10 @@ public abstract class Enemy extends Actor
     public Enemy(){
     }
     
-    public Enemy(int left,int right,Boolean live,Scenario1 sce)
+    public Enemy(int left,int right)
     {
-        this.live = live;
-        this.sce=sce;
+        //this.live = live;
+        //this.sce=sce;
         this.left = left;
         this.right = right;
     }
@@ -36,19 +36,8 @@ public abstract class Enemy extends Actor
     public void act() 
     {
         // Add your action code here.
-        if ( System.currentTimeMillis()>lastShot+1500)  
-        {  
-            fire();  
-            lastShot = System.currentTimeMillis();
-        }  
         
     }    
     
-    private void fire(){
-         BulletEnemy bullet = new BulletEnemy(leftright,true);
-         sce.enemybullets.add(bullet);
-//         System.out.println(sce.bullets.size());
-         getWorld().addObject(bullet, getX(), getY());
-    }
     public abstract Enemy clone();
 }
