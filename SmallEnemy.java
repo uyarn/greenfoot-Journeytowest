@@ -10,12 +10,13 @@ public class SmallEnemy extends Enemy
     
     int left2 = this.getRandomNumber(0,1020);
     int right2 = this.getRandomNumber(left2+1,1024);
-    
+    static int number = 1;
     public SmallEnemy(int left,int right)
     {
         //todo 
         this.left = left;
         this.right = right;
+        speed = number;
     }
     
     public void act()
@@ -27,7 +28,6 @@ public class SmallEnemy extends Enemy
     
     public void mover()
     {
-        
         if(speed > 0 && getX() < right)
         {
             move(speed);
@@ -35,18 +35,18 @@ public class SmallEnemy extends Enemy
         }
         else if(speed > 0 && getX() == right)
         {
-            speed = -1;
+            speed = -number;
             move(speed);
         }
         else if(speed < 0 && getX() > left)
         {
-            speed = -1;
+            //speed = -number;
             move(speed);
             
         }
         else if(speed < 0 && getX() == left)
         {
-            speed = 1;
+            speed = number;
             move(speed);
         }
         if(isTouching(Bullet.class))
@@ -61,16 +61,11 @@ public class SmallEnemy extends Enemy
     public Enemy clone()
     {
         
-        if(left2 < right2)
-        {
+            number = number+1;
             Enemy enemy = new SmallEnemy(left2,right2);
+            //enemy.speed = 2;
             return enemy;
-        }
-        else
-        {
-            Enemy enemy = new SmallEnemy(left2,right2);
-            return enemy;
-        }   
+   
     }
     
     public void judge(int HP)
