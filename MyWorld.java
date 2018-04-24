@@ -63,5 +63,7 @@ public class MyWorld extends World implements WorldSwapWorld
         sandy.setLocation(631,394);
         user1.setLocation(190,383);
         user2.setLocation(192,413);
+        introduction introduction = new introduction();
+        addObject(introduction,848,352);
     }
 }
