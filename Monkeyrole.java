@@ -175,7 +175,7 @@ public class Monkeyrole extends Player
                    if(this.status==false){//无敌状态
                       if (timer>0){
                        timer=timer-60;
-                       System.out.println(timer);
+                       
                        if(timer<=0){
                            this.status=true;
                            return;

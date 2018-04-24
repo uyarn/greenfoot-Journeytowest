@@ -23,7 +23,7 @@ public class Scenario1 extends World
      
      List<BulletEnemy> enemybullets=new ArrayList<BulletEnemy>();
      Enemy enemy=new SmallEnemy(100,200);
-     
+     SingletonBags bag = SingletonBags.getInstance();
      Player play1 ;
      Player play2 ; 
 //    Enemy enemy2=new Enemy();

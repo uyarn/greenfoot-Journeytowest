@@ -1,4 +1,6 @@
 #BlueJ class context
 comment0.target=State
 comment0.text=\n\ Write\ a\ description\ of\ class\ State\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
-numComments=1
+comment1.params=bulletEnemy\ enemy\ enemy_touch\ player
+comment1.target=void\ healthControl(greenfoot.Actor,\ greenfoot.Actor,\ greenfoot.Actor,\ Player)
+numComments=2
