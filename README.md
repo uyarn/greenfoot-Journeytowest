@@ -3,9 +3,9 @@
    * Yuyang Chen, Zhong Wang, Chenyan Yu, Wenyu Xiao, Yiwen Xiao
  * Engine: Greenfoot 3.1.0
    * Select Players
-     <img src ="./scenario1.png"/>
+     <img src ="./image/scenario1.png"/>
    * Play the Game
-     <img src ="./scenario2.png"/>
+     <img src ="./image/scenario2.png"/>
  * **Pattern used in this Game**
    * Factory √
    * Strategy √
