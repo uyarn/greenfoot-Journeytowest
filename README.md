@@ -14,6 +14,7 @@
    * Singleton √
    * Composite √
    * Prototype √
- * **How to use**
+ * **How to play**
    * Option 1: java -jar JourneyTotheWest.jar
-   * Option 2: install Greenfoot, then open this directory
+   * Option 2: visit this link :http://www.greenfoot.org/scenarios/21143
+   * Option 3: install Greenfoot, then open this directory
