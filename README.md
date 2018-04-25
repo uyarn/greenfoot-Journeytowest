@@ -1,5 +1,5 @@
 ## Journey to the West
- * Developed with classmates
+ * Developer
    * Yuyang Chen, Zhong Wang, Chenyan Yu, Wenyu Xiao, Yiwen Xiao
  * Engine: Greenfoot 3.1.0
    * Select Players
