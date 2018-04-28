@@ -36,7 +36,7 @@ public class Scenario1 extends World
         setBackground("dark1.jpg");
         countTime.mark();
         GreenfootSound backgroundMusic = new GreenfootSound("bgm.mp3");
-        backgroundMusic.playLoop();
+        backgroundMusic.play();
         switch(str[0]){
           case"M":play1 =new Monkeyrole(true,this,30);break;
           case"P":play1 =new Pigrole(true,this,30);break;
@@ -328,7 +328,7 @@ public class Scenario1 extends World
         addObject(scri2,837,243);
         Enemy boss = factory.createEnemy(1,800,900);
         Enemy enemy2 = factory.createEnemy(0,200,280);
-        addObject(enemy2,250,420);
+        addObject(enemy2,210,315);
         updownCloud upnew =new updownCloud(50,284,2);
         addObject(upnew,48,284);
         addObject(boss,812,235);
