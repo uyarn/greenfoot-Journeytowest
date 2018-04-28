@@ -9,6 +9,7 @@ public class Boss extends Enemy
 {
     // instance variables - replace the example below with your own
     private int rate = 0;
+    int HP = 20;
     /**
      * Constructor for objects of class Boss
      */

@@ -17,7 +17,7 @@ public abstract class Enemy extends Actor
     //private boolean leftright=true;
     //private Scenario1 sce;
     //private double lastShot;
-    int HP =20;
+    int HP;
     int speed = 1;
     int left ;
     int right;
@@ -33,11 +33,12 @@ public abstract class Enemy extends Actor
         this.right = right;
     }
     
-    public void act() 
+    public void act()
     {
         // Add your action code here.
         
     }    
     
     public abstract Enemy clone();
+    
 }

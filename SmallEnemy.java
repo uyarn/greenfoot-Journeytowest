@@ -5,11 +5,13 @@ import greenfoot.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class SmallEnemy extends Enemy 
+public class SmallEnemy extends Enemy
 {
     
-    int left2 = this.getRandomNumber(0,1020);
+    int left2 = this.getRandomNumber(0,800);
     int right2 = this.getRandomNumber(left2+1,1024);
+    int HP = getRandomNumber(20,60);
+    //int randomSpeed = getRandomNumber(1,5);
     public SmallEnemy(int left,int right)
     {
         //todo 
@@ -28,11 +30,13 @@ public class SmallEnemy extends Enemy
     {
         if(speed > 0 && getX() < right)
         {
+            //speed = randomSpeed;
             move(speed);
             
         }
         else if(speed > 0 && getX() == right)
         {
+            //speed = -randomSpeed;
             speed = -1;
             move(speed);
         }
@@ -44,6 +48,7 @@ public class SmallEnemy extends Enemy
         }
         else if(speed < 0 && getX() == left)
         {
+            //speed = randomSpeed;
             speed = 1;
             move(speed);
         }
@@ -59,7 +64,7 @@ public class SmallEnemy extends Enemy
     public Enemy clone()
     {
         
-            Enemy enemy = new BigEnemy(left2,right2);
+            Enemy enemy = new SmallEnemy(left2,right2);
             return enemy;
    
     }
