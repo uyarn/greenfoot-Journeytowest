@@ -8,12 +8,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class BigEnemy extends Enemy
 {
-    /**
-     * Act - do whatever the BigEnemy wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    
     int left2 = this.getRandomNumber(0,1020);
     int right2 = this.getRandomNumber(left2+1,1024);
+    int HP = getRandomNumber(60,120);
+    //int randomSpeed = getRandomNumber(1,5);
     public BigEnemy(int left,int right)
     {
         //todo 
@@ -32,6 +31,7 @@ public class BigEnemy extends Enemy
     {
         if(speed > 0 && getX() < right)
         {
+            //speed = randomSpeed;
             move(speed);
             
         }
@@ -54,7 +54,7 @@ public class BigEnemy extends Enemy
         if(isTouching(Bullet.class))
         {
             getWorld().removeObject(getOneIntersectingObject(Bullet.class));
-            HP = HP - 5;
+            HP = HP - 10;
             
         }
        
@@ -63,7 +63,7 @@ public class BigEnemy extends Enemy
     public Enemy clone()
     {
         
-            Enemy enemy = new SmallEnemy(left2,right2);
+            Enemy enemy = new BigEnemy(left2,right2);
             return enemy;
    
     }
@@ -84,5 +84,5 @@ public class BigEnemy extends Enemy
     {
         int normal = Greenfoot.getRandomNumber(end-start+1);
         return normal+start;
-    } 
+    }
 }
