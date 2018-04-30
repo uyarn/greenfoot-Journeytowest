@@ -329,6 +329,8 @@ public class Scenario1 extends World
         Enemy boss = factory.createEnemy(1,800,900);
         Enemy enemy2 = factory.createEnemy(0,200,280);
         addObject(enemy2,210,315);
+        Enemy enemy3 = factory.createEnemy(2,400,500);
+        addObject(enemy3,450,250);
         updownCloud upnew =new updownCloud(50,284,2);
         addObject(upnew,48,284);
         addObject(boss,812,235);

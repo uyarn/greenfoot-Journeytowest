@@ -17,6 +17,8 @@ public class Factory
             
             case 1:
                 return new Boss(left,right);
+            case 2:
+                return new BigEnemy(left,right);
                 
             default:
                 break;
